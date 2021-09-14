@@ -14,11 +14,11 @@ repositories:
   geometry2:
     type: git
     url: https://github.com/ms-iot/geometry2.git
-    version: windows/0.13.10
+    version: windows/0.13.11
   rviz:
     type: git
     url: https://github.com/ms-iot/rviz.git
-    version: windows/8.2.2
+    version: windows/8.2.3
   yaml_cpp_vendor:
     type: git
     url: https://github.com/ros2/yaml_cpp_vendor.git
@@ -46,7 +46,7 @@ repositories:
   ros2_control:
     type: git
     url: https://github.com/ros-controls/ros2_control.git
-    version: 8018f45e291801408ceac955d04504cb011e4f23
+    version: 0.8.0
   ros2_controllers:
     type: git
     url: https://github.com/ros-controls/ros2_controllers.git
@@ -62,7 +62,7 @@ repositories:
   rosbag2:
     type: git
     url: https://github.com/ms-iot/rosbag2.git
-    version: windows/0.3.7
+    version: windows/0.3.8
   joystick_drivers:
     type: git
     url: https://github.com/ms-iot/joystick_drivers.git
