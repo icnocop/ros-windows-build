@@ -21,4 +21,9 @@ if errorlevel 1 exit 1
 
 :: fix srdfdom.dll location.
 move /Y %INSTALL_DIR%\lib\*.dll %INSTALL_DIR%\bin
+
+:: workaround for pybind11_vendor which has hardcoded python lib location
+mkdir %INSTALL_DIR%\libs
+xcopy %INSTALL_DIR%\Lib\Python38.lib %INSTALL_DIR%\libs\Python38.lib
+
 if errorlevel 1 exit 1
