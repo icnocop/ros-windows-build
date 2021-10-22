@@ -3,6 +3,10 @@
 set ROS_VERSION=2
 set "IGNORED_PACKAGES=rttest test_osrf_testing_tools_cpp tlsf moveit_servo gripper_controllers"
 
+:: workaround for pybind11_vendor which has hardcoded python lib location
+mkdir %INSTALL_DIR%\libs
+xcopy %INSTALL_DIR%\Lib\Python38.lib %INSTALL_DIR%\libs\Python38.lib
+
 colcon build ^
     --merge-install ^
     --packages-skip-by-dep %IGNORED_PACKAGES% ^
@@ -21,9 +25,5 @@ if errorlevel 1 exit 1
 
 :: fix srdfdom.dll location.
 move /Y %INSTALL_DIR%\lib\*.dll %INSTALL_DIR%\bin
-
-:: workaround for pybind11_vendor which has hardcoded python lib location
-mkdir %INSTALL_DIR%\libs
-xcopy %INSTALL_DIR%\Lib\Python38.lib %INSTALL_DIR%\libs\Python38.lib
 
 if errorlevel 1 exit 1
