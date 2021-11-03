@@ -14,9 +14,10 @@ All notable package overrides will be explained and documented here.
 | cartographer_ros |Not included |     N/A      |https://github.com/ms-iot/cartographer_ros.git|     1.0.9001/windows    | Not included in foxy.repos, its being included because its universally used|
 | navigation2 |Not included |     N/A      |https://github.com/ms-iot/navigation2.git|     windows/0.4.5    |Fixing tests and port fixes including type changes and making sleep functionality compatible with windows|
 | vision_opencv |https://github.com/ros-perception/vision_opencv.git |  2.2.1   |https://github.com/ms-iot/vision_opencv.git|     windows/2.2.1    |Fixes for windows such as install location and boost version |
-| moveit |https://github.com/ros-planning/moveit2.git |  2.2.1   |https://github.com/ros-planning/moveit2.git|  2.3.0 | Override until next foxy release. |
-| ros2_control |Not included |  N/A  |https://github.com/ros-controls/ros2_control.git|  0.8.0  |Not included in foxy.repos, this is the latest tag |
-| ros2_controllers |Not included |  N/A  |https://github.com/ros-controls/ros2_controllers.git|  0.5.0   |Not in foxy.repos, 0.5.0 is latest version and has Windows fixes |
+| moveit |https://github.com/ros-planning/moveit2.git |  2.1.4   |https://github.com/ros-planning/moveit2.git|  ed844d4b46f70ed6e97d0c1f971ab2b9a45f156d  |Window fixes are upstream but not in latest tag. |
+| moveit_resources |https://github.com/ros-planning/moveit_resources.git |  2.0.2   |https://github.com/ros-planning/moveit_resources.git|  2.0.3  | Changes to panda_arm not in 2.0.2. |
+| ros2_control |Not included |  N/A  |https://github.com/ros-controls/ros2_control.git|  8018f45e291801408ceac955d04504cb011e4f23    |Not included in foxy.repos, this is the latest commit on master |
+| ros2_controllers |Not included |  N/A  |https://github.com/ros-controls/ros2_controllers.git|  0.4.1    |Not in foxy.repos, 0.4.1 is latest version and has Windows fixes |
 | geometric_shapes |https://github.com/ros-planning/geometric_shapes.git |  2.1.0  |https://github.com/ros-planning/geometric_shapes.git|  2e809db4377ed99f598480e4b3b48471ff3c0667    |Windows fix is upstream but not included in version 2.1.0, override is pinned to a later commit until next release|
 | control_toolbox |Not included |  N/A  |https://github.com/ros-controls/control_toolbox.git|  2.0.2   |Not included in foxy.repos, required for building moveit2 |
 | rosbag2 |https://github.com/ros2/rosbag2.git |  0.3.8  |https://github.com/ms-iot/rosbag2.git|  windows/0.3.8  |Changed patch to git apply to build on Windows, fix is upstream but not in tag: https://github.com/ros2/rosbag2/commit/759ec2768455d4f36e4692ca2c06f682ba6d44ae|

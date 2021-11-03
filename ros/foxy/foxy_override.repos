@@ -42,7 +42,11 @@ repositories:
   moveit:
     type: git
     url: https://github.com/ros-planning/moveit2.git
-    version: cdd25871fe0519f1869e42490c1f801e55d1e8db
+    version: ed844d4b46f70ed6e97d0c1f971ab2b9a45f156d
+  moveit_resources:
+    type: git
+    url: https://github.com/ros-planning/moveit_resources.git
+    version: 2.0.3
   ros2_control:
     type: git
     url: https://github.com/ros-controls/ros2_control.git
