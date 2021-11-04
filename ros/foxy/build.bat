@@ -18,8 +18,7 @@ colcon build ^
         -DCURL_NO_CURL_CMAKE=ON ^
         -DBUILD_TESTING:BOOL=False ^
         -DCMAKE_PROGRAM_PATH=%INSTALL_DIR%\tools\protobuf;%INSTALL_DIR%\tools\qt5\bin ^
-        -DCMAKE_PDB_OUTPUT_DIRECTORY=%PDB_OUTPUT_DIRECTORY% ^
-        -DPYTHON_EXECUTABLE=%INSTALL_DIR%\python.exe ^
+        -DCMAKE_PDB_OUTPUT_DIRECTORY=%PDB_OUTPUT_DIRECTORY%
     2>&1
 if errorlevel 1 exit 1
 
